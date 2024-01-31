@@ -1,6 +1,6 @@
 // Question 1
 const countries = require('countries.js')
-const web_techs = require('web_techs.js')
+const webTechs = require('web_techs.js')
 
 
 // Question 2
@@ -19,11 +19,24 @@ shoppingCart.splice(4, 1);
 shoppingCart[3] = "Green Tea";
 
 // Question 4
-console.log(countries.includes('ETHIOPIA'))
+
 function checkEthiopia(){
   if (countries.includes('ETHIOPIA')){
-    return
+    console.log("ETHIOPIA")
   } else{
     countries.push('ETHIOPIA')
   }
 }
+
+//Question 5
+
+function checkSass(){
+  if (webTechs.includes('Sass')){
+    console.log("Sass is a CSS preprocess")
+  } else{
+    webTechs.push('Sass');
+    console.log(webTechs)
+
+  }
+}
+
