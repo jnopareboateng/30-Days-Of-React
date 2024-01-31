@@ -1,4 +1,7 @@
-console.log("01_Day_JavaScript_Refresher/web_techs.js");
+// Question 1
+const countries = require('countries.js')
+const web_techs = require('web_techs.js')
+
 
 // Question 2
 let text =
@@ -16,8 +19,11 @@ shoppingCart.splice(4, 1);
 shoppingCart[3] = "Green Tea";
 
 // Question 4
-const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
-const backEnd = ["Node", "Express", "MongoDB"];
-
-const fullStack = frontEnd.concat(backEnd);
-console.log(fullStack);
+console.log(countries.includes('ETHIOPIA'))
+function checkEthiopia(){
+  if (countries.includes('ETHIOPIA')){
+    return
+  } else{
+    countries.push('ETHIOPIA')
+  }
+}
