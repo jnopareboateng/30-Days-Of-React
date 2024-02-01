@@ -1,4 +1,4 @@
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 const sortedAges = ages.sort((a, b) => a - b); // sort in ascending order
 const minAge = Math.min(...sortedAges);
 const maxAge = Math.max(...sortedAges);
@@ -29,3 +29,14 @@ console.log(`Min Age: ${minAge}`);
 console.log(`Max Age: ${maxAge}`);
 console.log(`Mean Age: ${meanAge}`);
 console.log(`Median Age: ${medianAge}`);
+
+const countries = require('countries.js');
+const firstTenCountries = countries.slice(0,countries.lenth -1);
+
+if (countries.length % 2 == 0){
+    coonsole.log(`even number of countries.`)
+    const firstHalf = coutries.slice(0,(countries.length -1 /2))
+} else {
+    countries.push('Ghana')
+}
+
