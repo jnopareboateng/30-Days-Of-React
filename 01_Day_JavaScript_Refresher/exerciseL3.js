@@ -30,7 +30,6 @@ console.log(`Max Age: ${maxAge}`);
 console.log(`Mean Age: ${meanAge}`);
 console.log(`Median Age: ${medianAge}`);
 
-import { countries } from "countries.js";
 import countries from "./countries";
 
 let firstTenCountries = countries.slice(0, countries.length);
@@ -38,12 +37,15 @@ console.log(`First Ten Countries: ${firstTenCountries}`);
 
 if (countries.length % 2 == 0) {
   console.log(`even number of countries.`);
-  const firstHalf = coutries.slice(0, (countries.length - 1) / 2);
+  const firstHalf = countries.slice(0, (countries.length - 1) / 2);
   console.log(`First Half: ${firstHalf}`);
 } else {
   countries.push("Ghana");
 }
 
-function middleCountry(){
-    if (countries.length)
+function middleCountry() {
+  return;
+  midCount = Math.floor(countries.length / 2);
+
+  console.log(`the middle country is ${midCount}`);
 }
